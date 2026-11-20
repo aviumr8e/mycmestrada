@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Mel | Keep Moving Forward</title>
+    <meta name="description" content="Welcome to Cherry Mel's little boredom project — static website creation, life updates, and creative experiments.">
+
+    <!-- Google Fonts: Cormorant Garamond / Playfair Display for editorial serif + Plus Jakarta Sans for clean body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        darkblue: '#0b1120',
+                        lightyellow: '#f9ffd7',
+                        placeholderblue: '#bae6fd',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0b1120;
+            color: #f9ffd7;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Subtle photo placeholder styling (light blue until you add your local image) */
+        .photo-placeholder {
+            background-color: #bae6fd;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-lightyellow selection:text-darkblue">
+
+    <!-- ==================== UPPER RIGHT NAVIGATION ==================== -->
+    <header id="home" class="w-full bg-darkblue border-b border-lightyellow/15 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 sm:px-10 h-16 sm:h-20 flex items-center justify-between">
+            <!-- Minimal Brand Mark -->
+            <a href="#home" class="font-serif italic text-xl sm:text-2xl text-lightyellow tracking-wide hover:opacity-80 transition-opacity">
+                Cherry Mel
+            </a>
+
+            <!-- Navigation Tabs (Upper Right) -->
+            <nav aria-label="Primary Navigation" class="flex items-center gap-4 sm:gap-8 text-xs sm:text-sm font-medium text-lightyellow">
+                <a href="#home" class="underline underline-offset-4 decoration-lightyellow/70 hover:opacity-80 transition-opacity">Home</a>
+                <a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-4 hover:opacity-80 transition-opacity">Blog</a>
+                <a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-4 hover:opacity-80 transition-opacity">Travel</a>
+                <a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-4 hover:opacity-80 transition-opacity">Technical</a>
+                <a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-4 hover:opacity-80 transition-opacity">My Playlist</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== HERO SECTION: KEEP MOVING FORWARD ==================== -->
+        <section class="w-full bg-darkblue text-lightyellow border-b border-lightyellow/15">
+            <div class="max-w-6xl mx-auto px-6 sm:px-10 py-14 sm:py-20">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                    
+                    <!-- Left Editorial Headline -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight text-lightyellow">
+                            Keep Moving<br>
+                            <span class="italic font-normal">Forward</span>
+                        </h1>
+                        <p class="text-base sm:text-lg text-lightyellow/90 max-w-md leading-relaxed">
+                            Hello Human, you’re doing good so far! Live more.
+                        </p>
+                    </div>
+
+                    <!-- Right Hero Image Placeholder (Light Blue) -->
+                    <div class="lg:col-span-6">
+                        <!-- 
+                            TO ADD YOUR OWN PHOTO LATER:
+                            1. Place your image file inside this website's folder (e.g., "hero.jpg").
+                            2. Uncomment the <img> tag below and update the src="hero.jpg".
+                        -->
+                        <div class="photo-placeholder w-full h-72 sm:h-96 rounded-2xl border border-lightyellow/25 flex flex-col items-center justify-center text-darkblue/60 p-6 text-center shadow-lg">
+                            <!-- <img src="hero.jpg" alt="Keep Moving Forward" class="w-full h-full object-cover"> -->
+                            <span class="text-xs uppercase tracking-widest font-semibold opacity-70">Hero Photo Placeholder</span>
+                            <span class="text-xs mt-1 opacity-60">(Replace with local image in your folder)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== INTRO & LATEST SHENANIGANS (LIGHT YELLOW SECTION) ==================== -->
+        <section class="w-full bg-lightyellow text-darkblue py-16 sm:py-24">
+            <div class="max-w-6xl mx-auto px-6 sm:px-10 space-y-20">
+                
+                <!-- Row 1: Portrait Placeholder + Hey, I'm Cherry Mel -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-14 items-center">
+                    <!-- Portrait Photo Placeholder (Light Blue) -->
+                    <div class="md:col-span-5">
+                        <!-- 
+                            TO ADD YOUR PORTRAIT PHOTO LATER:
+                            1. Save your photo in the same folder as this HTML file (e.g., "cherry-portrait.jpg").
+                            2. Uncomment the <img> tag below.
+                        -->
+                        <div class="photo-placeholder w-full aspect-[4/5] rounded-2xl border-2 border-darkblue/15 flex flex-col items-center justify-center text-darkblue/60 p-6 text-center shadow-sm">
+                            <!-- <img src="cherry-portrait.jpg" alt="Cherry Mel" class="w-full h-full object-cover"> -->
+                            <span class="text-xs uppercase tracking-widest font-semibold opacity-70">Portrait Photo Placeholder</span>
+                            <span class="text-xs mt-1 opacity-60">(Replace with local image in your folder)</span>
+                        </div>
+                    </div>
+
+                    <!-- Intro Copy & CTA Button -->
+                    <div class="md:col-span-7 space-y-5">
+                        <h2 class="font-serif text-4xl sm:text-5xl font-semibold text-darkblue tracking-tight">
+                            Hey, I’m <span class="italic">Cherry Mel</span>
+                        </h2>
+                        <p class="font-semibold text-lg text-darkblue">
+                            Welcome to my little boredom project!
+                        </p>
+                        <p class="text-base sm:text-lg text-darkblue/85 leading-relaxed max-w-xl">
+                            This is my attempt of static website creation and management using free services. Can you believe that I’ve built this website using free tools?
+                        </p>
+                        <div class="pt-2">
+                            <a href="#about-me" class="inline-block px-7 py-3.5 rounded-full bg-darkblue text-lightyellow text-sm font-semibold tracking-wide hover:opacity-90 active:scale-[0.98] transition-all shadow-sm">
+                                More about me!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <hr class="border-darkblue/15">
+
+                <!-- Row 2: Latest Shenanigans -->
+                <div class="space-y-8">
+                    <div class="text-center sm:text-left">
+                        <h3 class="font-serif text-3xl sm:text-4xl font-semibold text-darkblue">
+                            Latest <span class="italic">Shenanigans</span>
+                        </h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Card 1 -->
+                        <div class="rounded-2xl border border-darkblue/20 bg-lightyellow p-6 sm:p-7 flex flex-col justify-between hover:border-darkblue transition-colors">
+                            <span class="text-xs font-bold uppercase tracking-widest text-darkblue/50 mb-3">01</span>
+                            <p class="font-serif text-2xl font-semibold text-darkblue leading-snug">
+                                Looking for a remote good paying job
+                            </p>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="rounded-2xl border border-darkblue/20 bg-lightyellow p-6 sm:p-7 flex flex-col justify-between hover:border-darkblue transition-colors">
+                            <span class="text-xs font-bold uppercase tracking-widest text-darkblue/50 mb-3">02</span>
+                            <p class="font-serif text-2xl font-semibold text-darkblue leading-snug">
+                                Working hard to improve my Tennis
+                            </p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="rounded-2xl border border-darkblue/20 bg-lightyellow p-6 sm:p-7 flex flex-col justify-between hover:border-darkblue transition-colors">
+                            <span class="text-xs font-bold uppercase tracking-widest text-darkblue/50 mb-3">03</span>
+                            <p class="font-serif text-2xl font-semibold text-darkblue leading-snug">
+                                Province living is the best!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== LET'S CONNECT! (DARK BLUE SECTION) ==================== -->
+        <section class="w-full bg-darkblue text-lightyellow py-16 sm:py-20 border-t border-lightyellow/15">
+            <div class="max-w-4xl mx-auto px-6 sm:px-10 text-center space-y-6">
+                <h2 class="font-serif text-4xl sm:text-5xl font-semibold text-lightyellow">
+                    Let’s <span class="italic">Connect!</span>
+                </h2>
+                <p class="text-sm sm:text-base text-lightyellow/85 max-w-lg mx-auto leading-relaxed">
+                    Not active on majority of my social media’s, but I’ll make sure to get back to you...maybe sooner than later
+                </p>
+
+                <!-- Social Buttons -->
+                <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-3">
+                    <a href="https://www.facebook.com/kitcha8" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 rounded-full border border-lightyellow text-lightyellow text-sm font-medium hover:bg-lightyellow hover:text-darkblue transition-colors">
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/churrymel" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 rounded-full border border-lightyellow text-lightyellow text-sm font-medium hover:bg-lightyellow hover:text-darkblue transition-colors">
+                        Instagram
+                    </a>
+                    <!-- Threads left blank temporarily as requested -->
+                    <a href="#" aria-label="Threads (Coming Soon)" class="px-6 py-2.5 rounded-full border border-lightyellow/50 text-lightyellow/80 text-sm font-medium hover:bg-lightyellow hover:text-darkblue transition-colors">
+                        Threads
+                    </a>
+                    <a href="https://www.tiktok.com/@_shangki" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 rounded-full border border-lightyellow text-lightyellow text-sm font-medium hover:bg-lightyellow hover:text-darkblue transition-colors">
+                        TikTok
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT ME BANNER SECTION ==================== -->
+        <section id="about-me" class="w-full scroll-mt-20 border-t border-b border-darkblue/15">
+            <!-- 
+                TO ADD YOUR ABOUT ME BACKGROUND PHOTO LATER:
+                1. Place your image inside your website folder (e.g., "about-banner.jpg").
+                2. Uncomment the <img> tag below so it sits behind the "About me" text.
+            -->
+            <div class="photo-placeholder w-full py-20 sm:py-28 px-6 sm:px-10 text-darkblue">
+                <!-- <img src="about-banner.jpg" alt="About me background" class="absolute inset-0 w-full h-full object-cover opacity-35"> -->
+                
+                <div class="relative z-10 max-w-3xl mx-auto text-center space-y-5">
+                    <h2 class="font-serif text-4xl sm:text-6xl font-semibold text-darkblue tracking-tight">
+                        About <span class="italic font-normal">me</span>
+                    </h2>
+                    <p class="text-base sm:text-lg text-darkblue/90 leading-relaxed font-medium">
+                        I’m a writer, builder, and perpetual beginner. I started this blog as a way to document the small shifts that shape a meaningful life—creative experiments, work in progress, and the occasional snack-fueled epiphany. Thanks for reading; I’m glad you’re here.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== LIFE LATELY BLOG PREVIEW (LIGHT YELLOW SECTION) ==================== -->
+        <section class="w-full bg-lightyellow text-darkblue py-16 sm:py-24">
+            <div class="max-w-3xl mx-auto px-6 sm:px-10 space-y-6">
+                <div class="space-y-2">
+                    <p class="text-xs sm:text-sm font-semibold uppercase tracking-widest text-darkblue/60">
+                        January 30 · 7 minutes · Life Updates
+                    </p>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-semibold text-darkblue">
+                        Life <span class="italic">Lately</span>
+                    </h2>
+                </div>
+
+                <div class="space-y-4 text-base sm:text-lg text-darkblue/85 leading-relaxed">
+                    <p>
+                        Life lately has felt like a collection of small, quiet turning points—the kinds you almost miss while you’re busy chasing the bigger ones.
+                    </p>
+                    <p>
+                        I’ve been noticing how the days stack differently when I slow down just enough to pay attention: the way sunlight pools on my desk in the late afternoon, the conversations that linger longer than expected, the unexpected calm that follows a week of chaos. None of it is dramatic, but together it feels like a gentle recalibration, a reminder that even in seasons of uncertainty, there’s still a rhythm worth leaning into.
+                    </p>
+                </div>
+
+                <div class="pt-2">
+                    <a href="https://www.youtube.com/watch?v=BBJa32lCaaY" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 font-semibold text-sm sm:text-base text-darkblue underline underline-offset-4 hover:opacity-75 transition-opacity">
+                        <span>Read the full post</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SAY HELLO CONTACT FORM (DARK BLUE SECTION) ==================== -->
+        <section id="say-hello" class="w-full bg-darkblue text-lightyellow py-16 sm:py-24 border-t border-lightyellow/15">
+            <div class="max-w-2xl mx-auto px-6 sm:px-10 text-center space-y-8">
+                <div class="space-y-3">
+                    <h2 class="font-serif text-4xl sm:text-5xl font-semibold text-lightyellow">
+                        Say <span class="italic">hello</span>
+                    </h2>
+                    <p class="text-sm sm:text-base text-lightyellow/85">
+                        Whether it’s a question, a kind word, or a collaboration idea—I’d love to hear from you
+                    </p>
+                </div>
+
+                <form onsubmit="handleMessageSubmit(event)" class="space-y-4 text-left">
+                    <div>
+                        <label for="visitor-message" class="sr-only">Your Message</label>
+                        <textarea 
+                            id="visitor-message" 
+                            name="message" 
+                            rows="5" 
+                            required
+                            placeholder="Your Message"
+                            class="w-full rounded-2xl bg-darkblue border border-lightyellow/35 px-5 py-4 text-lightyellow placeholder-lightyellow/50 text-sm sm:text-base focus:outline-none focus:border-lightyellow transition-colors"
+                        ></textarea>
+                    </div>
+                    <div class="text-center pt-1">
+                        <button 
+                            type="submit" 
+                            class="px-8 py-3.5 rounded-full bg-lightyellow text-darkblue text-sm font-bold tracking-wide hover:opacity-90 active:scale-[0.98] transition-all cursor-pointer"
+                        >
+                            Send message
+                        </button>
+                    </div>
+                    <p id="form-feedback" class="hidden text-center text-sm text-lightyellow/90 pt-2">
+                        Thanks for saying hello! Your message has been noted.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="w-full bg-darkblue text-lightyellow/60 border-t border-lightyellow/15 py-8 text-center text-xs sm:text-sm">
+        <div class="max-w-6xl mx-auto px-6">
+            <p>© 2026 Cherry Mel. Built with free tools & curiosity.</p>
+        </div>
+    </footer>
+
+    <!-- Simple static form interaction -->
+    <script>
+        function handleMessageSubmit(event) {
+            event.preventDefault();
+            const textarea = document.getElementById('visitor-message');
+            const feedback = document.getElementById('form-feedback');
+            if (textarea && textarea.value.trim() !== '') {
+                textarea.value = '';
+                feedback.classList.remove('hidden');
+                setTimeout(() => {
+                    feedback.classList.add('hidden');
+                }, 4000);
+            }
+        }
+    </script>
+</body>
+</html>
